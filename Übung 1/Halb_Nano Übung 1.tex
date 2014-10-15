@@ -103,8 +103,114 @@ P &= \frac{\nu RT}{V} &= \frac{2,27 \cdot 8,134 \cdot 300}{80 \cdot 10^{-3}} = \
 \end{align*}
 
 
+\section{Aufgabe 5}
+
+\subsection*{a)}
+
+Wir lesen die Drücke aus dem Diagramm ab:
+
+\begin{align*}
+P_{294} &= \unit[64,7]{bar} \\
+P_{284} &= \unit[55,9]{bar}
+\end{align*}
 
 
+\subsection*{b)}
+
+
+Wir lesen zwei markante Punkte ab und bauen daraus den Graphen:
+
+\begin{align*}
+P_{304} &= \unit[73,4]{bar} \\
+P_{274} &= \unit[48,2]{bar}
+\end{align*}
+
+Der Graph sollte in etwa linear sein mit der Temperatur auf der x-Achse und einer Steigung von $\frac{\Delta P}{\Delta T} = \unit[0,786]{bar/K}$
+
+
+
+\subsection*{c)}
+
+Wir müssen uns zunächst klarmachen was $\Delta V$ ist. $\Delta V$ ist die Volumendifferenz zwischen dem gasigen und dem flüssigen Zustand, also gilt $\Delta V = V_g - V_f$. Nun lösen wir nach der Entalpie auf:
+
+\begin{align*}
+\Delta H &= \frac{\p P}{\p T} \cdot \Delta V \cdot T
+\intertext{Nun bestimmen wir die $\Delta V$ bei den angegebenen Temperaturen:}
+\Delta V(\unit[274]{K}) &= \unit[2,22 \cdot 10^{-4}]{m^3/mol} \\
+\Delta V(\unit[284]{K}) &= \unit[1,601 \cdot 10^{-4}]{m^3/mol} \\
+\Delta V(\unit[294]{K}) &= \unit[1,1 \cdot 10^{-4}]{m^3/mol} 
+\intertext{Nun berechnen wir die Enthalpie:}
+\Delta H_{\unit[274]{K}} &= 0,786 \cdot 10^5 \cdot 2,22 \cdot 10^{-4} \cdot 274 = \unit[4,78 \cdot 10^3]{J/mol} \\
+\Delta H_{\unit[284]{K}} &= 0,786 \cdot 10^5 \cdot 2,22 \cdot 10^{-4} \cdot 284 = \unit[3,57 \cdot 10^3]{J/mol} \\
+\Delta H_{\unit[294]{K}} &= 0,786 \cdot 10^5 \cdot 2,22 \cdot 10^{-4} \cdot 294 = \unit[2,31 \cdot 10^3]{J/mol} \\
+\end{align*}
+
+
+\subsection*{d)}
+
+Mit der Annahme $V_g >> V_f$ vereinfacht sich die Gleichung aus dem vorigen Aufgabenteil zu:
+
+\begin{align*}
+\frac{\p P}{\p T} &= \frac{\Delta H}{T V_g} 
+\intertext{Nutze $PV = RT$:}
+\Leftrightarrow \frac{\p P}{\p T} &= \frac{\Delta H \cdot P}{T^2 R}
+\intertext{Teile die Integration auf zwei Seiten auf:}
+\frac{\p P}{P} &= \frac{\Delta H \p T}{T^2 R} 
+\intertext{Wir führen folgende Integration aus $\int_{P_1}^{P_2}$ und $\int_{T_1}^{T_2}$ und erhalten:}
+\ln(P_2) - \ln(P_1) &= - \frac{\Delta H}{R} \left( \frac{1}{T_2} - \frac{1}{T_1} \right) \\
+\Leftrightarrow \frac{\p \ln(P)}{\p \frac{1}{T}} &= - \frac{\Delta H}{R}
+\end{align*}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.15]{A5_1.jpg}
+	\caption{$\frac{\Delta \ln(P)}{\Delta \frac{1}{T}} = - \frac{\Delta H}{R}$}
+\end{figure}
+
+
+\newpage
+
+\subsection*{e)}
+
+Wir bauen uns zuerst eine Tabelle mit ein paar Eckdaten, die wir schon kennen:
+
+\hfil \\
+
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		$T$ & $P_D$ & $\ln(P_D)$ & $\frac{1}{T}$ \\ 
+		\hline
+		$274$ & $48,2 \cdot 10^5$ & $15,39$ & $3,65 \cdot 10^{-3}$ \\ 
+		$284$ & $55,9 \cdot 10^5$ & $15,54$ & $3,52 \cdot 10^{-3}$ \\ 
+		$294$ & $64,7 \cdot 10^5$ & $15,68$ & $3,4 \cdot 10^{-3}$ \\ 
+	\end{tabular} 
+\end{center}
+
+\hfil \\
+
+Man erhält dann diesen Graphen:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.15]{A5_2.jpg}
+	\caption{$\frac{\Delta \ln(P)}{\Delta \frac{1}{T}} = -1,16 \cdot 10^{-3}$}
+\end{figure}
+
+\begin{align*}
+\Delta H = R \cdot 1,16 \cdot 10^{3} = \unit[9,64]{kJ/mol} = \unit[219]{kJ/kg}
+\end{align*}
+
+
+\newpage
+
+
+\subsection*{f)}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.15]{A5_3.jpg}
+	\caption{}
+\end{figure}
 
 
 
