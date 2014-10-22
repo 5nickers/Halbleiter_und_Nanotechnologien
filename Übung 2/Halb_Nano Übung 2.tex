@@ -18,7 +18,82 @@ Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/
 
 \section{Aufgabe 1}
 
+Wir machen zunächst eine Definition. $v_w = \sqrt{\frac{2kT}{m}}$ ist die wahrscheinlichste Geschwindigkeit. Nun müssen wir den Integrationsoperator transformieren:
 
+\begin{align*}
+f(v) \d v &\rightarrow f(v') \d v' \\
+\d v &= v_w \d v' \\ 
+f(v) \d v &= \frac{4}{\sqrt{\pi}} \cdot \left( \frac{m}{2kT} \right)^{3/2} \cdot \left( \frac{v^2}{v_w^2} \right) v_w^2 \cdot e^{- \frac{v^2}{v_w^2}} \d v' \cdot v_w \\
+&= \frac{4}{\sqrt{\pi}} \cdot v_w^3 \cdot \left( \frac{m}{2kT} \right)^{3/2} \cdot v'^2 \cdot e^{-v'^2} \d v' \\
+&= \frac{4}{\sqrt{\pi}} \cdot \left( \frac{2kT}{m} \right)^{3/2} \cdot \left( \frac{m}{2kT} \right)^{3/2} \cdot v'^2 \cdot e^{-v'^2} \d v' \\
+\Leftrightarrow f(v') \d v' &= \frac{4}{\sqrt{\pi}} \cdot v'^2 \cdot e^{-v'^2} \d v'
+\end{align*}
+
+\section{Aufgabe 2}
+
+Die Wahrscheinlichkeit kann man über ein Integral berechnen:
+
+\begin{align}
+P &= \int_{v_1}^{v_2} f(v) \d v = \int_{400}^{410} \frac{4}{\sqrt{\pi}} \cdot \left( \frac{m}{2kT} \right)^{3/2} \cdot  v^2 \cdot e^{- \frac{m v^2}{2kT}} \d v
+\intertext{Das sollte man mit einem geeignete Programm lösen. Man erhält dann:}
+&\approx \unit[1,96]{\%}
+\end{align}
+
+\newpage
+
+\section{Aufgabe 3}
+
+\subsection*{a)}
+
+
+Die mittlere Geschwindigkeit und die quadratisch gemittelte Geschwindigkeit sind so definiert:
+
+\begin{align*}
+<v> &= \sqrt{\frac{8 RT}{m \pi}} \qquad v_{RMS} = \sqrt{\frac{3 RT}{m}}
+\intertext{Damit können wir jetzt die Geschwindigkeiten berechnen:}
+\end{align*}
+
+
+\begin{center}
+	\centering
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		& $H_2$ & $H_2O$ & $N_2$ & $CO_2$ \\ 
+		\hline
+		P/mbar  & $3 \cdot 10^{-10}$ & $10^{-10}$ & $1,5 \cdot 10^{-11}$ & $6 \cdot 10^{-12}$ \\ 
+		\hline
+		m  & 2 & 18 & 28 & 44 \\ 
+		\hline
+		$<v>$  & 1781 & 593 & 476 & 380 \\ 
+		\hline
+		$v_(RMS)$  & 1933 & 644 & 517 & 412 \\ 
+		\hline 
+	\end{tabular}
+\end{center}
+ 
+
+
+\subsection*{b)}
+
+Die vorhandenen Moleküle zerlegen sich zu $H_2$, deshalb gibt es davon relativ viel.
+
+
+\section{Aufgabe 4}
+
+\begin{align*}
+v_{RMS} = \sqrt{\frac{3 RT}{m}}
+\end{align*}
+
+Wenn die Geschwindigkeit auf das doppelte Steigen soll, dann müssen wir einen Faktor 4 in die Wurzel packen und haben damit einen Faktor 4 bei der Temperatur und habn dann statt Raumtemperatur $\unit[1200]{k}$. Das ist schon lecker warm....
+
+
+\section{Aufgabe 5}
+
+\begin{align*}
+P V &= \nu RT
+\end{align*}
+
+Wenn der Druck verdoppelt wird, steigt die Temperatur auf das doppelte und damit wegen $E_{kin} = \frac{2}{3} kT$ die kinetische Energie ebenso. Bei verdoppeltem Volumen gilt das selbe.
 
 
 
