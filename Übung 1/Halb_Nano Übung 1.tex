@@ -233,7 +233,90 @@ R T V^3 \cdot V &= 3 a (V - b)^3
 \Leftrightarrow 2a (V - b)^2 \cdot V &= 3a (V - b)^3 \\
 \Leftrightarrow 2 V &= 3 (V - b) \\
 \Leftrightarrow V &= 3b
+\intertext{Durch einsetzen können wir nun schnell die anderen beiden Terme herleiten:}
+RT \cdot V^3 &= 2a \cdot \left( B - b \right)^2 \\
+\Leftrightarrow RT \cdot (3b)^3 &= 2a \cdot \left( 3b - b \right)^2 \\
+\Leftrightarrow RT \cdot 27b^3 &= 2a \cdot 4b^2 \\
+T &= \frac{8}{27 b} \cdot \frac{a}{b} \\
+\hfill \\
+P = \frac{RT}{V - b} - \frac{a}{V^2} &= \frac{RT}{3b - b} - \frac{a}{3b^2} \\
+&= \frac{RT}{2b} - \frac{a}{9b^2} = \frac{8 \cdot Ra}{27 \cdot Rb \cdot 2b} - \frac{a}{9b^2} \\
+&= \frac{4a - 3a}{27b^2} = \frac{a}{27b^2}
 \end{align*}
+
+
+\section{Aufgabe 7}
+
+\subsection*{a)}
+
+
+\begin{align*}
+T_k &= \unit[304,02]{K} \\
+P_k &= \unit[73,8]{mbar} \\
+V_k &= \unit[0,129]{l/mol} \\
+\end{align*}
+
+
+\subsection*{b}
+
+\begin{align*}
+V_{m,k} &= 3b \Leftrightarrow b = \unit[0,043]{l/mol} \\
+P_k &= \frac{a}{27 b^2} \Leftrightarrow a = P_k \cdot 27b^2 = \unit[0,368]{Pa m^6/mol^2}
+\end{align*}
+
+
+\subsection*{c)}
+
+Wir teilen das Volumen von einem Mol $CO_2$ Moleküle durch die Anzahl der Moleküle und erhalten dadurch das Volumen:
+
+\begin{align*}
+V_{CO_2} &= \frac{0,043 \cdot 10^{-3}}{6,022 \cdot 10^{23}} = \unit[7,14 \cdot 10^{-24}]{m^3}
+\intertext{Nun rechnen wir auf den Radius zurück:}
+V = \frac{4}{3} \cdot \pi R^3 \Leftrightarrow R &= \sqrt[3]{\frac{3V}{4 \pi}} = \sqrt[3]{\frac{3 \cdot 7,14 \cdot 10^{-24}}{ 4 \pi}} = \unit[0,257]{nm}
+\end{align*}
+
+
+\subsection*{d)}
+
+Hier habe ich nur eine schematische Zeichnung des Verlaufs gemacht.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.15]{A7_1.jpg}
+	\caption{In der Theorie sollte die Fläche über und unter der Linie grade Null ergeben}
+\end{figure}
+
+
+
+\section{Aufgabe 8}
+
+\subsection*{a)}
+
+\begin{align*}
+P = \frac{RT}{V - b} - \frac{a}{V^2}
+\end{align*}
+
+
+\subsection*{b)}
+
+Wir machen eine Taylorentwicklung dieser Form:
+
+\begin{align*}
+P_{(b)} = P_{b=0} &= \frac{\p P}{\p b} \cdot b + \frac{\p^2 P}{\p^2 b} \cdot b^2 + \cdots
+\intertext{Wir bestimmen die ersten 3 Ableitungen:}
+\frac{\p P}{\p b}&= \frac{RT}{(V_m - b)^2} \\
+\frac{\p^2 P}{\p^2 b}&= \frac{2RT}{(V_m - b)^3} \\
+\frac{\p^3 P}{\p^3 b}&= \frac{6RT}{(V_m - b)^4}
+\intertext{Nun setzen wir ein:}
+P_{b} &=  \frac{RT}{V - b} - \frac{a}{V^2} + \frac{RT}{(V_m - b)^2} \cdot b + \half \frac{2RT}{(V_m - b)^3} \cdot b^3 + \frac{1}{6} \cdot \frac{6RT}{(V_m - b)^4} \cdot b^3 \\
+&= RT \cdot \left( 1 + \left( b - \frac{a}{RT} \right) \frac{1}{V_m} + \frac{b^2}{V_m^2} + \frac{b^3}{V_m^3} + \cdots \right)
+\intertext{Durch Koeffizientenvergleich erhalten wir $a_1$ und $a_2$:}
+a_1 &= b - \frac{a}{RT} \qquad a_2 = b^2
+\end{align*}
+
+
+
+
 
 
 
