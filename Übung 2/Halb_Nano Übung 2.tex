@@ -192,4 +192,41 @@ q_N &= j_N \cdot A
 \end{center}
 
 
+
+\section{Aufgabe 12}
+
+\subsection*{a)}
+
+Der Leitwert is allgemein:
+
+\begin{align*}
+C &= \sqrt{\frac{8RT}{M \pi}} \cdot \frac{A}{4}
+\intertext{Bis auf die Molmasse ist alles Konstanten, also können wir schreiben:}
+C_{N_2} &= \frac{1}{\sqrt{M_{N_2}}} \cdot a \cdot A 
+\intertext{Für Wasserstoff gilt dann:}
+C_{H_2} &= \frac{1}{\sqrt{M_{H_2}}} \cdot a \cdot A 
+\intertext{Es ergibt sich dann:}
+C_{H_2} &= C_{N_2} \cdot \sqrt{\frac{28}{2}} = \unit[3,77]{ml/s}
+\end{align*}
+
+
+\subsection*{b)}
+
+Die Funktion für die Druck ist:
+
+\begin{align*}
+P &= P_0 \cdot e^{-\frac{t}{\tau}} \qquad \text{mit} \qquad \tau = \frac{V}{S_{eff}}
+\intertext{Wir bestimmen die jeweiligen $\tau$:}
+\tau_{H_2} &= \frac{2}{3,77 \cdot 10^{-3}} = \unit[534,8]{s} \\
+\tau_{N_2} &= \frac{2}{10^{-3}} = \unit[2000]{s}
+\intertext{Daraus ergeben sich die Partialdrücke:}
+P_{H_2} &= 10^{-3} \cdot e^{- \frac{1800}{534,8}} = \unit[3,45 \cdot 10^{-5}]{mbar} \\
+P_{N_2} &= 10^{-3} \cdot e^{- \frac{1800}{2000}} = \unit[4 \cdot 10^{-4}]{mbar}
+\intertext{Der Gesamtdruck ergibt sich nun aus der Addition der beiden Drücke:}
+P_{ges} &= P_{H_2} + P_{N_2} = \unit[4,345 \cdot 10^{-4}]{mbar}
+\end{align*}
+
+
+
+
 \end{document}
