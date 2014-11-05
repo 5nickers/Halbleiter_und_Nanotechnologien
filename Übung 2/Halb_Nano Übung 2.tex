@@ -177,7 +177,7 @@ q_N &= j_N \cdot A
 \end{align*}
 
 \begin{center}
-	\begin{array}{c|c|c|c|c}
+	\begin{tabular}{c|c|c|c|c}
 		& $H_2$ & $N_2$ & $H_2O$ & $CO_2$   \\ 
 		\hline
 	M/g	& 2 & 28 & 18 & 44 \\ 
@@ -189,7 +189,7 @@ q_N &= j_N \cdot A
 	$q_N$	& $2,15 \cdot 10^{19}$ & $5,75 \cdot 10^{18}$ & $7,17 \cdot 10^{18}$ & $4,59 \cdot 10^{18}$ \\ 
 		\hline
 	$j_V$	& 440 & 117 & 146 & 93
-	\end{array} 
+	\end{tabular} 
 \end{center}
 
 
@@ -251,15 +251,63 @@ q_N &= n \cdot q_V = \frac{P q_V}{kT} = \frac{L}{kT} = \frac{10^{-10}}{1,38 \cdo
 
 Wir berechnen die Größe den Wafers:
 
-\begin{align}
+\begin{align*}
 A &= \frac{d^2 \pi}{4} = \frac{50 \cdot 10^{-3} \cdot \pi}{4} = \unit[1,96 \cdot 10^{-3}]{m^2}
 \intertext{Wir bestimmen wie viele Teilchen pro $m^2$ auftreffen:}
 j_N &= \frac{2,41 \cdot 10^{10}}{1,96 \cdot 10^{-3}} = \unit[1,22 \cdot 10^9]{Teilchen/m^2 s}
 \intertext{Nun bestimmen wir die relative Haufigkeit einer Dotierung:}
-\frac{1,22 \cdot 10^{6}}{6,8 \cdot 10^{14}} = 1,8 \cdot 10^{-9}
-\end{align}
+\frac{1,22 \cdot 10^{6}}{6,8 \cdot 10^{14}} &= 1,8 \cdot 10^{-9}
+\end{align*}
 
-Das heißt, das jedes Milliarste Atom ein Fehlatom ist. Damit ist die Verschmutzung tolerierbar.
+Das heißt, das jedes Milliarste Atom ein Fehlatom ist. Damit ist die Verschmutzung tolerierbar. Genau ist die Dotierung:
+
+\begin{align*}
+\left( \sqrt{6,8 \cdot 10^{14}} \right)^3 &= \unit[1,7 \cdot 10^{22}]{Teilchen/cm^3} 
+\intertext{Die Dotierung ist dann:}
+1,7 \cdot 10^{22} \cdot 1,8 \cdot 10^{-9} &= \unit[3 \cdot 10^{13}]{Teilchen/cm^3}
+\end{align*}
+
+
+
+\subsection*{d)}
+
+
+Die Leitfähigkeit ist:
+
+\begin{align*}
+\sigma &= n \cdot e \cdot \mu = 3 \cdot 10^{13} \cdot 1,6 \cdot 10^{-19} \cdot 4 = \unit[1,9 \cdot 10^{-5}]{1/ \Omega m}
+\end{align*}
+
+
+\subsection*{e)}
+
+Der Widerstand berechnen sich aus der Leitfähigkeit und der Fläche:
+
+\begin{align*}
+R &= \frac{l}{\sigma \cdot A} = \frac{10^{-6}}{1,9 \cdot 10^{-5} \cdot 10^{-4}} = \unit[526,31]{\Omega}
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
