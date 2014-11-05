@@ -1,0 +1,49 @@
+\input{header.tex}
+
+
+\begin{document}
+
+\maketitle
+
+Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons} Lizenz veröffentlicht.
+
+\textcolor{red}{Ich erhebe keinen Anspruch auf Vollständigkeit oder Richtigkeit. Falls ihr Fehler findet oder etwas fehlt, dann meldet euch bitte über den Emailkontakt.}
+
+\tableofcontents
+
+
+\newpage
+
+
+
+\section{Aufgabe 1}
+
+\subsection*{a)}
+
+Der Strom aus dem Behälter ist:
+
+\begin{align*}
+j_N &= \frac{N}{V} \cdot \frac{<v>}{4} = \frac{\p N}{\p t} \cdot \frac{1}{A} \\
+\Leftrightarrow N(t + \d t) &= N(t) - j_{N(t)} \cdot A \cdot \d t \\
+\Leftrightarrow n(t + \d t) &= n(t) - \frac{j_{N(t)} \cdot A \cdot \d t}{V} \\
+\Leftrightarrow \frac{n(t + \d t) - n(t)}{\d t} &= - \frac{j_{N(t) \cdot A}}{V} = \frac{-n(t) \cdot <v> \cdot A}{V \cdot 4} \\
+\underset{\d t \rightarrow 0}{lim} \qquad \frac{\dot{n}}{n} &= \frac{<v> \cdot A}{4V} := \frac{1}{\tau} \\
+\hfill \\
+\Rightarrow n(t) &= n_0 \cdot e^{-\frac{t}{\tau}}
+\intertext{Wir rechnen ein Beispiel mit $N_2$ Gas bei $T = \unit[300]{K}$ und $P = \unit[1]{mbar}$, dabei ist $<v> = \unit[426]{m/s}$.}
+\tau &= \frac{4 \cdot 1}{426 \cdot \frac{\left( 10^{-3} \right)^2 \pi}{4}} = \unit[1,2 \cdot 10^4]{s}
+\intertext{Dieses $\tau$ nutzen wir jetzt für die Bestimmung des $\unit[50]{\%}$ Wertes:}
+\half n_0 &= n_0 \cdot e^{- \frac{t}{\tau}} \\
+\Leftrightarrow t &= -\tau \ln\left( \half \right) = \unit[8,3 \cdot 10^3]{s}
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+\end{document}
