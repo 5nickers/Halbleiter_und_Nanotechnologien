@@ -288,9 +288,114 @@ R &= \frac{l}{\sigma \cdot A} = \frac{10^{-6}}{1,9 \cdot 10^{-5} \cdot 10^{-4}} 
 \end{align*}
 
 
+\section{Aufgabe 14}
+
+\subsection*{a)}
+
+Allgemein ist der Leitwert:
+
+\begin{align*}
+C &= 1,2 \cdot \sqrt{\frac{T}{M}} \cdot \frac{D^3}{L} = 1,2 \cdot \sqrt{\frac{300}{28 \cdot 10^{-3}}} \cdot \frac{\left( 2 \cdot 10^{-2} \right)^3}{3} = \unit[3,3 \cdot 10^{-4}]{m^3/2} = \unit[0,33]{l/s}
+\end{align*}
+
+\subsection*{b)}
+
+Eine normale Blende hat folgenden Durchfluss:
+
+\begin{align*}
+C_{Blende} &= 11,77 \cdot \frac{\left( 2 \cdot 10^{-2} \right)^2 \cdot \pi}{4} = \unit[3,7 \cdot 10^{-2}]{m^3/s} = \unit[37]{l/s}
+\end{align*}
+
+\subsection*{c)}
+
+\begin{align*}
+\frac{1}{S_{eff}} &= \frac{1}{C} + \frac{1}{C_{Pumpe}} = \frac{1}{0,33} + \frac{1}{1000} = \unit[3,02]{s/l} \\ 
+\Leftrightarrow S_{eff} &= \unit[0,33]{l/s}
+\end{align*}
+
+
+\subsection*{d)}
+
+Der Gasstrom ergibt sich aus dem Leitwert und dem Druck:
+
+\begin{align*}
+I &= P_e \cdot S_{eff} = 10^{-6} \cdot 0,33 = \unit[3,3 \cdot 10^{-7}]{mbar\ l/s}
+\end{align*}
+
+
+\subsection*{e)}
+
+Zunächst rechnen wir die nötigen Größen in SI Einheiten um:
+
+\begin{align*}
+U_D &= \frac{T}{A \cdot P} 
+\intertext{Wir rechnen mit:}
+I &= 3,3 \cdot 10^{-7} \cdot 10^{-3} \cdot 10^5 = \unit[3,3 \cdot 10^{-8}]{Pa \ m^3/s} \\
+A &= \frac{0,02^2 \cdot \pi}{4} = \unit[3,14 \cdot 10^{-4}]{m^3} \\
+P &= \unit[10^{-6}]{mbar} = \unit[10^{-4}]{Pa} \\
+\hfill \\
+U_D &= \frac{3,3 \cdot 10^{-8}}{3,14 \cdot 10^{-4} \cdot 10^{-4}} \approx \unit[1]{m/s}
+\end{align*}
 
 
 
+\subsection*{f)}
+
+Wir erwarten einen Druckgradienten.
+
+\newpage
+
+\subsection*{Aufgabe 16}
+
+
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline  & $N_2$ & $H_2$ & $He$ & Luft & $Ar$ \\ 
+	\hline M/g & 28 & 2 & 4 & 18 & 40 \\ 
+	\hline dyn. Visko. $\eta$ & 17,8 & 8,4 & 18 & 19 & 21 \\ 
+	\hline 
+\end{tabular} 
+
+\hfill \\
+
+Allgemein ist der Leitwert:
+
+\begin{align*}
+C_{molekular} &= \sqrt{\frac{RT}{2 \pi \mu}} \cdot A
+\intertext{Nun normieren wir auf Helium:}
+C_{He} &= C_1 \cdot \frac{1}{\sqrt{4}} \qquad \text{mit} \qquad C_{Ar} = \frac{1}{\sqrt{40}} \Rightarrow C_{Ar} = C_{He} \cdot \sqrt{\frac{4}{40}}
+\intertext{So können wir nun alles berechnen:}
+C_{Ar} &= C_{He} \cdot \sqrt{\frac{4}{40}} = \unit[0,316]{C_{He}} \\
+C_{Luft} &= C_{He} \cdot \sqrt{\frac{4}{28}} = \unit[0,378]{C_{He}} \\
+C_{H_2O} &= C_{He} \cdot \sqrt{\frac{4}{18}} = \unit[0,424]{C_{He}} \\
+C_{H_2} &= C_{He} \cdot \sqrt{\frac{4}{2}} = \unit[1,41]{C_{He}} \\
+\end{align*}
+
+
+Den laminaren Fluss berechnen wir so:
+
+\begin{align*}
+C_{laminar} &= \frac{\pi R^4 P}{8 \eta l} = C_2 \cdot P \cdot \frac{1}{\eta} \\
+\intertext{Wir erhalten dann:}
+C_{Ar} &= \frac{\eta_{He}}{\eta_{Ar}} \cdot C_{He} = \frac{19}{21} \cdot C_{He} = \unit[0,9]{C_{He}} \\
+C_{Luft} &= \frac{19}{18} \cdot C_{He} = \unit[1,05]{C_{He}} \\
+C_{N_2} &= \frac{19}{17,8} \cdot C_{He} = \unit[1,06]{C_{He}} \\
+C_{H_2} &= \frac{19}{8,4} \cdot C_{He} = \unit[2,26]{C_{He}} \\
+\end{align*}
+
+
+
+\section{Aufgabe 17}
+
+Wir betrachten die Effusionsstromdichte von links nach rechts:
+
+\begin{align*}
+j_{N_2} &= \frac{n_{N_2} \cdot <v>}{4} = \frac{P_{N_2}}{kT_1} \cdot \frac{<v_{N_2}>}{4} \\
+&= \frac{1,33 \cdot 10^{-2} \cdot 10^{-3} \cdot 10^5}{1,3 \cdot 10^{23} \cdot 300 \cdot 4} \cdot \sqrt{\frac{8RT_1}{M \pi}} = \unit[3,87 \cdot 10^{22}]{1/m^2 \ s}
+\intertext{Für Quecksilber haben wir dann:}
+j_{Hg} &= \frac{1,33 \cdot 10^{-2} \cdot 10^{-3} \cdot 10^5}{1,3 \cdot 10^{23} \cdot 400 \cdot 4} \cdot \sqrt{\frac{8RT_2}{M \pi}} \unit[1,24 \cdot 10^{24}]{1/m^2 \ s}
+\end{align*}
+
+Es wird also mehr Quecksilber in die Kammer geblasen als Stickstoff entfernt wird. Gegen das Quecksilber kann man eine Kältefalle verwenden.
 
 
 
