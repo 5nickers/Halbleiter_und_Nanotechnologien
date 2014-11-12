@@ -54,6 +54,138 @@ Die andere Teilaufgaben gehen genauso, deshalb spare ich mir die!
 
 
 
+\section{Aufgabe 3}
+
+
+\subsection*{a)}
+
+Wir berechnen die Leitwerte wie in Aufgabe 2)
+
+\begin{align*}
+C_1 &= \unit[14]{l/s} \\
+C_2 &= \unit[2,7]{l/s} \\
+C_3 &= \unit[30]{l/s} \\
+C_4 &= \unit[1177]{l/s} \\
+\end{align*}
+
+Der Gesamtleitwert ist dann:
+
+\begin{align*}
+\frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \frac{1}{C_4} = \unit[0,476]{s/l} \\
+C_{ges} &= \unit[2,1]{l/s}
+\end{align*}
+
+
+\subsection*{b)}
+
+Bei einer Parallelschaltung addieren sich die Leitwerte:
+
+\begin{align*}
+C_{ges} &= \sum_{1}^{4} C_i = \unit[1224]{l/s}
+\end{align*}
+
+
+\subsection*{c)}
+
+Der effektive Saugvermögen ist:
+
+\begin{align*}
+\frac{1}{S_{eff}} &= \frac{1}{C_{ges}} + \frac{1}{1000} = \unit{0,477}{s/l} \\
+S_{eff} &= \frac{1}{0,477} = \unit[2,1]{l/s}
+\end{align*}
+
+
+\section{Aufgabe 4}
+
+Allgemein ist der Gasstrom durch eine Öffnung:
+
+\begin{align*}
+q_v &= 1,15 \cdot \sqrt{\frac{T}{M}} \cdot A
+\intertext{Wir rechnen mit Stickstoff:}
+&= 1,15 \cdot \sqrt{\frac{300}{28 \cdot 10^{-3}}} \cdot A = 119 \cdot A \\
+\Leftrightarrow A &= \frac{q_v \cdot 10^{-3} \cdot 10^4}{119} \qquad \text{$q_v$ in $\unit[]{l/s}$ und $A$ in $\unit[]{cm^2}$} \\
+&= 8,4 \cdot 10^{-2} \cdot q_v
+\intertext{Damit ergeben sich die folgenden Flächen:}
+A_1 &= \unit[8,4]{cm^2} \qquad d = \unit[3,3]{cm} \\
+A_2 &= \unit[33,6]{cm^2} \qquad d = \unit[6,5]{cm} \\
+A_3 &= \unit[84]{cm^2} \qquad d = \unit[10,3]{cm} \\
+A_4 &= \unit[168]{cm^2} \qquad d = \unit[14,6]{cm} \\
+\end{align*}
+
+
+\section{Aufgabe 5}
+
+\subsection*{a)}
+
+Wir rechnen zunächst die Torr in Pascal um:
+
+\begin{align*}
+P &= \frac{5 \cdot 10^{-11}}{1,33} = \unit[6,65 \cdot 10^{-11}]{mbar}
+\intertext{Der Gas Druckstrom berechnet sich dann über:}
+I &= P \cdot S = 6,65 \cdot 10^{-11} \cdot 1000 = \unit[6,65 \cdot 10^{-9}]{Pa \ m^3 /s}
+\end{align*}
+
+
+\subsection*{b)}
+
+
+\begin{align*}
+q_N = \frac{I}{kT} = \frac{6,65 \cdot 10^{-9}}{1,38 \cdot 10^{-23} \cdot 300} = \unit[1,57 \cdot 10^{12}]{1/s}
+\end{align*}
+
+
+\subsection*{c)}
+
+Die Leckrate entspricht dem Gasstrom aus a)
+
+
+\subsection*{d)}
+
+In einem $P(t)$ ist die Steigung einfach:
+
+\begin{align*}
+\frac{I}{V_{rez}} &= \frac{6,65 \cdot 10^{-9}}{0,5} = \unit[1,38 \cdot 10^{-8}]{Pa/s}
+\intertext{Bei Teilchen erhalten wir folgendes:}
+\frac{PV}{kT} &= \frac{I}{kT} = \unit[1,57 \cdot 10^{12}]{1/s}
+\intertext{Daraus erhalten wir:}
+P &= P_0 + 1,38 \cdot 10^{-8} \cdot t \\
+N(t) &= N_0 + 1,57 \cdot 10^{12} \cdot t
+\end{align*}
+
+
+\subsection*{f)}
+
+Man klemmt die Pumpe luftdicht ab und erstellt ein $P-t$ Diagramm, indem man eine Gerade mit der Steigung $\frac{I}{V_{rez}}$. Die Leckrate ist dann $L = \text{Steigung} - V_{rez}$
+
+
+\subsection*{g)}
+
+
+Wir haben also einen ungefähren Druckunterschied von $\approx \unit[10^{-6}]{mbar}$. Diese müssen wir einfach duch unsere Leckrate teilen:
+
+\begin{align*}
+\Delta t &= \frac{\Delta P}{L} = \frac{10^{-6}}{1,38 \cdot 10^{-8}} = \unit[72,4]{s}
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \end{document}
