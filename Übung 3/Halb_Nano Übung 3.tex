@@ -168,17 +168,70 @@ Wir haben also einen ungefähren Druckunterschied von $\approx \unit[10^{-6}]{mb
 \end{align*}
 
 
+\section{Aufgabe 6}
+
+
+\subsection*{a)}
+
+
+Bild einfügen!!!!
+
+
+Das zeitliche verhalten sähe in einer Formel so aus:
+
+\begin{align*}
+P(t) &= P_E + (P_0 - P_E) \cdot e^{- \frac{t}{\tau}}
+\intertext{$\tau$ ist in diesem Fall:}
+\tau &= \frac{V_{rez}}{S_{eff}} = \frac{1}{1} = \unit[1]{s} 
+\intertext{Damit gilt:}
+P(t) &= P_E + (10^{-3} - P_E) \cdot e^{- \frac{t}{1}}
+\end{align*}
+
+
+\subsection*{b)}
+
+Für den Enddruck gilt das Gleichgewicht zwischen Leckrate und Abpumprate:
+
+\begin{align*}
+P_a \cdot C_{Leck} &= P_E \cdot S_{Pumpe} 
+\intertext{Unsere Leckrate ist dabei:}
+C_{Leck} &= 117,6 \cdot A = 117,6 \cdot \frac{\left( 10^{-6} \right)^2 \cdot \pi}{4} = \unit[9,2 \cdot 10^{-8}]{l/s}
+\intertext{Wir formen nach $P_E$ um:}
+P_E &= \frac{P_A \cdot C_{Leck}}{S_{Pumpe}} = \frac{1000 \cdot 9,2 \cdot 10^{-8}}{1000} = \unit[9,2 \cdot 10^{-8}]{mbar}
+\end{align*}
+
+
+\subsection*{c)}
+
+\begin{align*}
+9,2 \cdot 10^{-8} \cdot 1000 &= \unit[9,2 \cdot 10^{-5}]{mbar \ l/s} \qquad \textcolor{red}{Warum????}
+\intertext{Die anderen Leckraten ergeben sich darüber:}
+C_{H_2} &= C_{N_2} \cdot \sqrt{\frac{28}{2}} = 9,2 \cdot 10^{-5} \cdot 3,2 = \unit[3,44 \cdot 10^{-4}]{mbar \ l/s} \\
+C_{H_2} &= C_{N_2} \cdot \sqrt{\frac{28}{2}} = \unit[3,44 \cdot 10^{-4}]{mbar \ l/s} \\
+C_{O_2} &= C_{N_2} \cdot \sqrt{\frac{28}{32}} = \unit[8,6 \cdot 10^{-5}]{mbar \ l/s} \\
+C_{He} &= C_{N_2} \cdot \sqrt{\frac{28}{4}} = \unit[2,4 \cdot 10^{-4}]{mbar \ l/s}
+\end{align*}
+
+
+\subsection*{d)}
+
+Wir nehmen vereinfacht an:
+
+\begin{align*}
+P &\sim P_0 \cdot e^{- \frac{t}{\tau}} \\
+\Leftrightarrow - \frac{t}{\tau} &= \ln\left( \frac{P}{P_0} \right) \\
+\Leftrightarrow t &= - \tau \cdot \ln\left( \frac{P}{P_0} \right) = 1 \cdot \ln\left( 10^{-3} \right) = \unit[6,9]{s}
+\end{align*}
 
 
 
+\section{Aufgabe 7}
 
+Die mittlere freie Weglänge können wir so bestimmen:
 
-
-
-
-
-
-
+\begin{align*}
+\Lambda_{N_2} &= \frac{1}{\pi \sqrt{2} d^2 n} = \frac{kT}{\pi \sqrt{2} d^2 P} = \unit[97]{\mu m}
+\end{align*}
 
 
 
