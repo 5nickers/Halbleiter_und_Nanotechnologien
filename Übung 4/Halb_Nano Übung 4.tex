@@ -1,0 +1,95 @@
+\input{header.tex}
+
+
+\begin{document}
+
+\maketitle
+
+Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons} Lizenz veröffentlicht.
+
+\textcolor{red}{Ich erhebe keinen Anspruch auf Vollständigkeit oder Richtigkeit. Falls ihr Fehler findet oder etwas fehlt, dann meldet euch bitte über den Emailkontakt.}
+
+\tableofcontents
+
+
+\newpage
+
+
+
+\section{Aufgabe 1}
+
+\subsection*{a)}
+
+Die Leckrate hängt vom Dampfdruck des Öl ab und dessen Volumenstrom:
+
+\begin{align*}
+L &= P_{Öl} \cdot q_V 
+\intertext{Der Volumenstrom ist dabei:}
+q_V &= \frac{<v> \cdot A}{4} = \sqrt{\frac{RT}{2M \pi}} \cdot A = \sqrt{\frac{8,31 \cdot 300}{2 \cdot 26 \cdot 10^{-3} \cdot \pi}} \cdot 10^{-4} = \unit[1,23 \cdot 10^{-2}]{m^3/s}
+\intertext{Die Leckrate ist dann:}
+L &= 10^{-6} \cdot 10^{-3} \cdot 10^5 \cdot 1,23 \cdot 10^{-2} = \unit[1,23 \cdot 10^{-6}]{Pa \ m^2/s}
+\end{align*}
+
+
+\subsection*{b)}
+
+Der Enddruck setzt sich aus der Leckrate und der Saugrate zusammen:
+
+\begin{align*}
+L &= P_E \cdot S \\
+\Leftrightarrow P_E &= \frac{L}{S} = \frac{1,23 \cdot 10^{-6}}{0,1} = \unit[1,23 \cdot 10^{-5}]{Pa}
+\end{align*}
+
+
+\subsection*{c)}
+
+Wir berechnen zunächst den Teilchenstrom, mit dem wir dann den Massestrom berechnen:
+
+\begin{align*}
+q_N &= \frac{ n \cdot <v> \cdot A}{4} = n \sqrt{\frac{RT}{2M \pi}} \cdot A = \frac{P}{kT}\sqrt{\frac{RT}{2M \pi}} \cdot A = P \cdot \sqrt{\frac{R}{2 k M \pi T}} \cdot A \\
+&= 10^{-6} \cdot 100 \cdot \sqrt{\frac{8,31}{2 \cdot 1,38 \cdot 10^{-23} \cdot 26 \cdot 10^{-3} \cdot \pi \cdot 300}} \cdot 10^{-4} = \unit[2,98 \cdot 10^{14}]{1/s}
+\intertext{Der Massenstrom ist dann:}
+q_m &= m \cdot q_V = \frac{26 \cdot 10^{-3}}{6,022 \cdot 10^{23}} \cdot 2,98 \cdot 10^{14} = \unit[1,29 \cdot 10^{-11}]{kg/s}
+\intertext{Nun müssen wir die Masse des Tröpfchens bestimmen. Dazu bestimmen wir zuerst den Radius:}
+10^{-4} &= \frac{4 \pi r^2}{2} \\
+r &= \sqrt{\frac{2 \cdot 10^{-4}}{4 \pi}} = \unit[4 \cdot 10^{-3}]{m} \\
+m &= \frac{\rho \cdot V}{2} = \frac{800 \cdot \frac{4}{3} \cdot \pi \cdot \left( 4 \cdot 10^{-3} \right)^3}{2} = \unit[10^{-4}]{kg}
+\intertext{Die Zeit, die wir brauchen um das Tröpfchen abzusaugen wäre dann:}
+t &= \frac{10^{-4}}{1,29 \cdot 10^{-11}} = \unit[8,16 \cdot 10^6]{s} \approx 96
+\end{align*}
+
+\subsection*{d)}
+
+Für die Leckrate macht es keinen Unterschied, ob etwas von draußen reinkommt oder von drinnen leckt. Zudem ist es schwer nachzuweisen, ob es ein Leck draußen oder drinnen ist.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
