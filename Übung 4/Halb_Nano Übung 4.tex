@@ -77,20 +77,104 @@ C_L &= \frac{\tau_0 \cdot e^{E_{Des}/RT} \cdot H_0 \cdot N_A}{n_{mono} \cdot \sq
 \theta &= \frac{180 \cdot 10^{-6} \cdot 100}{180 \cdot 10^{-6} \cdot 100 + 1} = 0,0177 \approx \unit[1,8]{\%}
 \end{align*}
 
+\newpage
+
+\subsection*{b)}
+
+Hier sollen wir den Druck ausrechnen bei dem eine vorgegebene Bedeckung erreicht wird. Dazu nutzen wir die Formel aus Teil a):
+
+\begin{align*}
+\theta &= \frac{C_L \cdot P}{1 + C_L \cdot P} := 0,9 \\
+\Leftrightarrow C_L P &= \left( 1 + C_L P \right) \cdot 0,9 \\
+\Leftrightarrow 0,9 &= C_L P \cdot \left( 1 - 0,9 \right) \\
+\Leftrightarrow P &= \frac{0,9}{C_L \cdot 0,1} = \frac{0,9}{180 \cdot 0,1} = \unit[5 \cdot 10^{-2}]{Pa} = \unit[5 \cdot 10^{-4}]{mbar}
+\end{align*}
 
 
+\section{Aufgabe 3}
+
+\subsection*{c)}
+
+Im Prinzip ist das nur einsetzen und dann lösen der DGL:
+
+\begin{align*}
+j_{ads} &= j_N \cdot H_0 \cdot \left( 1 - \theta \right) = \frac{\p \tilde{n}}{\p t} \\
+\Leftrightarrow \dot{\tilde{n}} &= j_N \cdot H_0 \cdot \left( 1 - \theta \right) \\
+\Leftrightarrow 0 &= j_N \cdot H_0 - j_N \cdot \theta \cdot H_0 - \dot{\tilde{n}} \\
+\intertext{Wir setzen für $\theta$ ein:}
+\Leftrightarrow 0 &= j_N \cdot H_0 - \frac{j_N \cdot \tilde{n} \cdot H_0}{n_0} - \dot{\tilde{n}} 
+\intertext{$n_0$ entspricht dabei einer Monolage Stickstoff.}
+\Leftrightarrow 0 &= \dot{\tilde{n}} + \frac{j_N \cdot \tilde{n} \cdot H_0}{n_0} - j_N \cdot H_0
+\intertext{Wir nutzen die vorgegebene Lösung für die DGL und bestimmen $c_1$ und $c_2$:}
+c_1 &= \frac{j_N \cdot H_0}{n_0} \qquad c_2 = - j_n \cdot H_0 \\
+\intertext{Wir setzen für den rechten Teil der Lösung ein:}
+- \frac{c_2}{c_1} &= \frac{- j_n \cdot H_0 \cdot n_0}{j_N \cdot H_0} = n_0 \\
+\intertext{Damit ist die allgemeine Lösung:}
+\Rightarrow \tilde{n} &= A e^{-c_1 t} + n_0
+\intertext{Nun bestimmen wir $A$ über den Anfangswert:}
+\tilde{n}(0) &= 0 \qquad \rightarrow A + n_0 = 0 \qquad \rightarrow A = -n_0 \\
+\Rightarrow \tilde{n} &= n_0 \left(1 - e^{-c_1 t} \right) 
+\intertext{Nun können wir $c_1$ genau bestimmen:}
+c_1 &= \frac{j_N \cdot H_0}{n_0} = \frac{n \cdot <v> \cdot H_0}{4 \cdot n_0} = \frac{P}{kT} \cdot \frac{<v>}{4} \cdot \frac{H_0}{n_0} \\
+&= \frac{P \sqrt{8 kT}}{4kT \sqrt{\pi M}} \cdot \frac{H_0}{n_0} = \frac{P \sqrt{8}}{4 \sqrt{RT \pi M}} \cdot \frac{H_0}{n_0}
+\intertext{Wir nutzen $k\cdot m = \frac{RM}{N_A}$}
+&= \frac{P \sqrt{8} N_A H_0}{4 \sqrt{RM \pi T} n_0} = \frac{10^{-4} \cdot \sqrt{8} \cdot 6,022 \cdot 10^{23} \cdot 0,5}{4 \cdot \sqrt{8,31 \cdot 28 \cdot 10^{-3} \cdot \pi \cdot 573 \cdot 10^{19}}} = 1,04 \cdot 10^{-1}
+\intertext{Damit is unsere Lösung:}
+\tilde{n} &= n_0 \left(1 - e^{-0,104 \cdot t} \right) 
+\intertext{Um die Zeit für eine $\unit[50]{\%}$ zu berechnen gehen wir wie folgt vor:}
+0,5 &= 1 - e^{-0,104 \cdot t} \\
+\Leftrightarrow 0,5 &= e^{-0,104 \cdot t} \\
+\Leftrightarrow -0,104 t &= \ln(0,5) \\
+\Leftrightarrow t &= \frac{\ln(0,5)}{-0,104} = \unit[6,66]{s}
+\end{align*}
 
 
+\subsection*{d)}
+
+Wir betrachten nur die Desorbtion:
+
+\begin{align*}
+\tilde{n} &= \tilde{n_0} \cdot e^{-\frac{t}{\tau}} \\
+\tau &= \tau_0 \cdot e^{\frac{E_{des}}{RT}} = 10^{-13} \cdot e^{\frac{170000}{8,31 \cdot 573}} = \unit[334]{s}
+\Rightarrow \tilde{n} &= \tilde{n_0} \cdot e^{-\frac{t}{334}}
+\intertext{Nun berechnen wir wie lange wir warten müssen bis die Bedeckung nur noch $\unit[10]{\%}$ beträgt:}
+0,1 &= e^{- \frac{t}{334}} \\
+\Leftrightarrow \ln(0,1) &= - \frac{t}{334} \\
+\Leftrightarrow t &= \ln(0,1) \cdot 334 = \unit[769]{s}
+\end{align*}
 
 
+\section{Aufgabe 4}
 
 
+\subsection*{1)}
+
+Bereich Atmosphäre: a,c,f \\
+
+Bereich $10^{-3} - 10^{-8}$: b,d,e (Ionenzerstäuber),h \\
+
+Bereich UHV: e(Ionengetter),g,h,d
 
 
+\subsection*{2)}
 
+Beim Abpumpen von kondensierbaren Gasen.
 
+\subsection*{3)}
 
+Alle Pumpen in den Bereichen $10^{-3}$ bis UHV brauchen eine Vorpumpe.
 
+\subsection*{4)}
+
+Die Kombination a), da diese Ölfrei ist und daher kein Öl die Kammer verschmutzt.
+
+\subsection*{5)}
+
+\begin{align*}
+\unit[10^{-8}]{mbar} &\Rightarrow \unit[100]{s} \\
+\unit[10^{-9}]{mbar} &\Rightarrow \unit[1000]{s} \\
+\unit[10^{-10}]{mbar} &\Rightarrow \unit[1000]{s} \\
+\end{align*}
 
 
 
