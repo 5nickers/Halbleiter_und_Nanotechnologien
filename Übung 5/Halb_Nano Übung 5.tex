@@ -70,32 +70,76 @@ D
 Damit das erfüllt ist gelten $\det(m) = 0$.
 
 
+\section{Aufgabe 2}
+
+Im Prinzip ist das nur intelligentes Umformen:
+
+\begin{align*}
+E &= \frac{\hbar^2 k^2}{2m} \qquad \Leftrightarrow \qquad k = \sqrt{\frac{2mE}{\hbar^2}}
+\intertext{Damit wir $\d E$ erhalten müssen wir $E$ nach $k$ ableiten:}
+\frac{\d E}{\d k} &= \frac{\hbar^2 k}{2m} \\
+\Leftrightarrow \d k &= \frac{\d E \cdot m}{\hbar k} = \frac{\d E \cdot m \hbar}{\hbar^2 \cdot \sqrt{2mE}} = \frac{1}{\hbar} \cdot \sqrt{\frac{m}{2E}} \d E
+\intertext{Wir können nun $\d k$ ersetzen:}
+D(k) \d k &= \frac{\pi 2 m E \cdot \sqrt{m}}{\pi^3 \hbar^3 \cdot \sqrt{2E}} \d E = \frac{1}{\pi^2 \hbar^3} \cdot \sqrt{2E} \cdot \sqrt{m}^3 \d E
+\intertext{Nun haben wir:}
+D(E) \d E &= \frac{1}{\pi^2 \hbar^3} \cdot \half \cdot \left( 2m \right)^{3/2} \cdot \sqrt{E} \d E
+\intertext{Mit $\hbar = \frac{h}{2 \pi}$ erhalten wir:}
+&= \frac{4 \pi \cdot \left( 2m \right)^{3/2)} \cdot \sqrt{E}}{h^3}
+\end{align*}
+
+
+\section{Aufgabe 4}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.15]{A4_1.jpg}
+\end{figure}
+
+Wir müssen hier die Zustandsdichte über ein Intervall integrieren:
+
+\begin{align*}
+n &= \int_{0}^{1} D(E) \d E = \int_{0}^{1} \frac{4 \pi \cdot \left( 2m \right)^{3/2)} \cdot \sqrt{E}}{h^3} \\
+&= \left. \frac{4 \pi \cdot \left( 2m \right)^{3/2}}{h^3} \frac{2}{3} \cdot E^{3/2}  \right|_0^1 \\
+&= \frac{4\pi \left( 29,11 \cdot 10^{-31} \right)^{3/2}}{6,625 \cdot 10^{-34}} \cdot \frac{2}{3} \cdot \left( 1,6 \cdot 10^{-19} \right)^{3/2} = \unit[4,5 \cdot 10^{27}]{m^{-3}}
+\end{align*}
+
+Das sind dann Zustände pro Kubikmeter
 
 
 
+\section{Aufgabe 5}
+
+\subsection*{1D}
+
+Wir definieren uns zunächst ein $\d z$:
+
+\begin{align*}
+\d z &= \frac{\text{Strecke}}{\text{Strecke für einen Zustand}} = \frac{\d k_x}{\frac{\pi}{a}} = \frac{a \d k_x}{\pi}
+\intertext{Nun normieren wir $\d z$:}
+\d z' &= \frac{\d z}{a} = \frac{\d k_x}{\pi}
+\intertext{Nun bestimmen wir $k_x$:}
+\d E &= \frac{\hbar^2 k_x}{m} \d k \\
+\Leftrightarrow \d k &= \frac{m}{\hbar^2 k_x} \d E \\
+\Leftrightarrow k_x &= \sqrt{\frac{2mE}{\hbar^2}}
+\intertext{Nun können wir in die ursprüngliche Gleichung einsetzen:}
+\d z' &= \frac{m \hbar }{\pi \hbar^2 \cdot \sqrt{2mE}} \d E = \frac{\sqrt{m}}{\pi \hbar \cdot \sqrt{2}} \cdot \frac{1}{\sqrt{E}} \d E
+\end{align*}
 
 
+\subsection*{2D}
 
+Wir definieren uns wieder das $\d z$:
 
+\begin{align*}
+\d z &= \frac{\overbrace{2 \pi k \d k}^{\text{Fläche eines Kreisrings}}}{\left( \frac{\pi}{a} \right)} = \frac{2 \pi k a^2 \d k}{\pi^2}
+\intertext{Wir normieren wieder:}
+\d z' &= \frac{\d z}{a^2} = \frac{2 \pi k \d k}{\pi}
+\intertext{Wir verwenden das $\d k$ aus dem vorigen Teil:}
+&= \frac{2 \pi}{\pi^2} \cdot \sqrt{\frac{2mE}{\hbar^2}} \cdot \frac{m}{\hbar^2 \cdot k} \d E = \frac{2m}{\pi \hbar^2} \d E
+\end{align*}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Wir sehen, das im zweidimensionalen Fall die Zustandsdichte konstant ist.
 
 
 
