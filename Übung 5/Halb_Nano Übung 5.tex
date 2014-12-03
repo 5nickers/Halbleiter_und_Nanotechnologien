@@ -1,0 +1,107 @@
+\input{header.tex}
+
+
+\begin{document}
+
+\maketitle
+
+Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons} Lizenz veröffentlicht.
+
+\textcolor{red}{Ich erhebe keinen Anspruch auf Vollständigkeit oder Richtigkeit. Falls ihr Fehler findet oder etwas fehlt, dann meldet euch bitte über den Emailkontakt.}
+
+\tableofcontents
+
+
+\newpage
+
+
+
+\section{Aufgabe 1}
+
+siehe auf die Zeichnung in Aufgabe 2.
+
+
+\section{Aufgabe 2}
+
+Die Lösung wird nur skizziert, weil die Lösung schon im Skript steht.
+
+Wir starten mit der Schrödinger Gleichung:
+
+\begin{align*}
+0 &= \frac{\p^2 \Psi}{\p x^2} + \frac{2m}{\hbar} \cdot \left( E - V(x) \right) \cdot \Psi(x)
+\intertext{Dabei ist $\Psi(x)$}
+\Psi(x) &= u(x) \cdot e^{ikx}
+\intertext{Dann gilt in den Bereichen I und II:}
+\Psi_I &= u_1(x) \cdot e^{ik_1x} \\
+\Psi_{II} &= u_2(x) \cdot e^{ik_2x} 
+\intertext{Wir setzen in die Schrödinger Gleichung ein:}
+0 &= u_1'' + 2ik_1 u_1' - \left( k_1^2 - \alpha^2 \right) \qquad \text{mit} \qquad \alpha^2 = \frac{2mE}{\hbar} \\
+0 &= u_2'' + 2ik_2 u_1' - \left( k_2^2 - \alpha^2 \right) 
+\intertext{Daraus ergeben sich die allgemeinen Lösungen:}
+u_1(x) &= A \cdot e^{i \left( \alpha - k_1 \right)x} + B \cdot e^{i \left( \alpha - k_1 \right)x} \qquad \text{mit} \qquad \beta^2 = \alpha^2 - \frac{2mV_0}{\hbar} \\
+u_2(x) &= C \cdot e^{i \left( \alpha - k_2 \right)x} + D \cdot e^{i \left( \alpha - k_2 \right)x}
+\intertext{Aus der Stetigkeit der Übergang ergeben sich folgende Randbedingungen:}
+u_1(0) &= u_2(0) \qquad u_1(a) = u_2(-b) \\
+u_1'(0) &= u_2'(0) \qquad u_1'(a) = u_2'(-b)
+\intertext{Aus der Vorlesunf wissen wir, das mir dieses Problem mit einer Matrix lösen müssen:}
+\underbrace{
+\left[
+\begin{matrix}
+...&...  &...  &...  \\ 
+&  &  &  \\ 
+&  &  &  \\ 
+&  &  & 
+\end{matrix} 
+\right]
+}_{\text{m}}
+\cdot
+\left(
+\begin{matrix}
+A \\ 
+B \\ 
+C \\ 
+D
+\end{matrix} 
+\right)
+= 
+0
+\end{align*}
+
+Damit das erfüllt ist gelten $\det(m) = 0$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
