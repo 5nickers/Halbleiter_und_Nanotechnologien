@@ -19,9 +19,82 @@ Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/
 \section{Aufgabe 1}
 
 
+Die Ladungsträgerkonzentration in Kupfer ist $n_{Cu} = \unit[8,43 \cdot 10^{28}]{1/m^3}$. Nun können wir den Druck im Gas bestimmen:
+
+\begin{align*}
+P &=n \cdot k \cdot T = 8,43 \cdot 10^{28} \cdot 1,38 \cdot 10^{-23} \cdot 300 = \unit[3,49 \cdot 10^{8}]{Pa} = \unit[3490]{bar}
+\end{align*}
 
 
+\section{Aufgabe 2}
 
+Das geht einfach über die Energiegleichung:
+
+\begin{align*}
+E_{Cu} &= \half mv^2 = 7 \cdot 1,6 \cdot 10^{-19} \\
+\Leftrightarrow v &= \sqrt{\frac{2 \cdot 7 \cdot 1,6 \cdot 10^{-19}}{9,1 \cdot 10^{-31}}} = \unit[1,6 \cdot 10^6]{m/s} 
+\end{align*}
+
+
+\section{Aufgabe 3}
+
+Für die Zustandsdichte gilt:
+
+\begin{align*}
+D(E) &= \frac{\d N}{\d E} = \frac{1}{2 \pi^2} \cdot \left( \frac{2m}{\hbar^2} \right)^{\frac{3}{2}} \cdot \sqrt{E} \cdot V = c_1 \cdot V \cdot \sqrt{E}
+\intertext{Dabei ist $\d N$ die Anzahl der Elektronen im Energieintervall. Nun berechnen wir die Teilchendichte $N$:}
+N &= V \cdot \int_{0}^{E_F} D(E) \d E = \frac{V}{2 \pi^2} \cdot \left( \frac{2m}{\hbar^2} \right)^{\frac{3}{2}} \cdot \int_{0}^{E_F} \sqrt{E} \d E \\
+&= \frac{2}{3} \left[ \frac{V}{2\pi^2} \left( \frac{2m}{\hbar^2} \right)^{\frac{3}{2}} \right] \cdot E_F^{\frac{3}{2}} = \frac{2}{3} \cdot c_1 \cdot E^{\frac{3}{2}} \cdot V
+\intertext{Die mittlere Energie ist:}
+<E> &= \frac{V}{N} \cdot \int_{0}^{E_F} E \cdot D(E) \d E = \frac{V}{N} \cdot \int_{0}^{E_F} E \cdot c_1 \cdot \sqrt{E} \d E \\
+&= \frac{V}{N} \cdot c_1 \cdot \int_{0}^{E_F} E^{\frac{3}{2}} \d E = \frac{V}{N} \cdot c_1 \cdot \frac{2}{5} E^{\frac{5}{2}} \\
+&= \frac{V}{\frac{2}{3} \cdot c_1 \cdot E^{\frac{3}{2}} \cdot V} \cdot c_1 \cdot \frac{2}{5} \cdot E^{\frac{5}{2}} = \frac{3}{5} E_F
+\end{align*}
+
+
+\section{Aufgabe 4}
+
+\subsection*{a)}
+
+Wir berechnen zunächst die Masse eines Atoms:
+
+\begin{align*}
+m_{Al} &= \frac{M_{Al}}{N_A} = \frac{26,98}{6,022 \cdot 10^{23}} = \unit[4,48 \cdot 10^{-26}]{kg}
+\intertext{Nun noc das Volumen:}
+V &= \frac{m_{Al}}{\rho} = \frac{4,48 \cdot 10^{-26}}{2,7 \cdot 10^3} = \unit[1,66 \cdot 10^{-29}]{m^3}
+\intertext{Die Elektronendichte ist nun:}
+n &= \frac{3}{V} = \frac{3}{1,66 \cdot 10^{-29}} = \unit[1,8 \cdot 10^{29}]{1/m^3}
+\end{align*}
+
+
+\subsection*{b)}
+
+Wir nehmen uns die Formel für die Elektronendichte aus der Aufgabe 3 und formen nach der Fermienergie um:
+
+\begin{align*}
+n &= \frac{2}{3} \cdot c_1 \cdot E_F^{\frac{3}{2}} \qquad \Leftrightarrow E_F = \left( \frac{3}{2} \cdot \frac{1}{c_1} \cdot n \right)^{\frac{2}{3}}
+\intertext{Wir setzen $c_1$ ein:}
+E_F &= \left[ \frac{3}{2} \cdot 2 \pi^2 \cdot \left( \frac{\hbar^2}{2m} \right)^{\frac{3}{2}} \cdot n \right]^{\frac{2}{3}} = \left( 3 \pi^2 \right)^{\frac{2}{3}} \cdot \frac{\hbar^2}{2m} \cdot n^{\frac{2}{3}} = \unit[11,6]{eV}
+\end{align*}
+
+\subsection*{c)}
+
+\begin{align*}
+E_F &= k \cdot T_F \\
+\Leftrightarrow T &= \frac{E_F}{k} = \frac{1,86 \cdot 10^{-19}}{1,38 \cdot 10^{-23}} = \unit[135000]{K}
+\end{align*}
+
+\section{Aufgabe 5}
+
+Die gesamte innere Energie ist:
+
+\begin{align*}
+U &= \frac{3}{5} \cdot N \cdot E_F = N \cdot \frac{3}{5} \cdot \frac{\hbar^2}{2m} \cdot \left( 3 \pi^2 \cdot n \right)^{\frac{2}{3}} \qquad \text{mit} \qquad n = \frac{N}{V} 
+\intertext{Dies leiten wir nun ab:}
+P &= \frac{\p U}{\p V} = \frac{2}{5} \cdot n \cdot E_F
+\intertext{Mit den Werten aus A4 ergibt sich ein Druck:}
+P &= \frac{2}{5} \cdot 1,8 \cdot 10^{29} \cdot 11,6 \cdot 1,6 \cdot 10^{-19} = \unit[1,3 \cdot 10^{11}]{Pa} = \unit[1,3 \cdot 10^6]{bar}
+\end{align*}
 
 
 
