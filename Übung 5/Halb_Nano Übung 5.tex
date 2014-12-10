@@ -142,6 +142,74 @@ Wir definieren uns wieder das $\d z$:
 Wir sehen, das im zweidimensionalen Fall die Zustandsdichte konstant ist.
 
 
+\section{Aufgabe 6}
+
+\subsection*{a)}
+
+Wir wissen das für die Energie der Elektonen $E = 3kT + E_F$ gilt. Wir können dies nun in die Zustandswahrscheinlichkeit einsetzen:
+
+\begin{align*}
+f_h(E) &= \frac{1}{1 + e^{\frac{E - E_F}{kT}}} = \frac{1}{1 + e^{\frac{3kT}{kT}}} = \frac{1}{1 + e^3} \\
+&= 0,0474 = \unit[4,47]{\%}
+\end{align*}
+
+\subsection*{b)}
+
+Hier sieht das ganze rech ähnlich aus:
+
+\begin{align*}
+f_h(E) 1 - f(E) = \frac{1}{1 + e^{- \frac{E - E_F}{kT}}} = 0,0474 = \unit[4,74]{\%}
+\end{align*}
+
+
+
+schematisch sieht das ungefähr so aus:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.1]{A6_1.jpg}
+\end{figure}
+
+
+\section{Aufgabe 7}
+
+Wir nehmen die Fermiverteilung von oben und setzen sie mit der Bolzmanverteilung gleich:
+
+\begin{align*}
+f(E) &= \frac{1}{1 + e^{\frac{E - E_F}{kT}}} = \frac{1}{1 + e^x} \qquad \text{mit} \qquad x = \frac{E - E_F}{kT} \\
+\intertext{Wir setzen gleich:}
+f_B(E) &= e^{- \frac{E - E_F}{kT}} = e^{-x} \\
+\intertext{Dabei solle nur $\unit[5]{\%}$ Fehler gemacht werden:}
+\frac{5}{100} &= \frac{f_B(E) - f(E)}{f(E)} = \frac{e^{-x} + \frac{1}{1 + e^x}}{\frac{1}{1 + e^x}} = \frac{\frac{e^{-x} + e^0 - 1}{1 + e^x}}{\frac{1}{1 + e^x}} \\
+\Leftrightarrow e^{-x} &= \frac{5}{100} \\
+\Leftrightarrow x &= - \ln\left( \frac{5}{100} \right) \approx 3 \\
+\Rightarrow \frac{E - E_F}{kT} &= 3 \qquad \rightarrow \qquad \Delta E = 3kT
+\end{align*}
+
+
+Verbildlicht sieht das ca so aus:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.1]{A7_1.jpg}
+\end{figure}
+
+
+\newpage
+
+\section{Aufgabe 8}
+
+Alle Informationen sind in diesem Bild zusammengefasst:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.16]{A8_1.jpg}
+\end{figure}
+
+
+
+
+
 
 
 
