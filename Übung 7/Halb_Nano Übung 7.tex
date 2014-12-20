@@ -1,0 +1,62 @@
+\input{header.tex}
+
+
+\begin{document}
+
+\maketitle
+
+Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons} Lizenz veröffentlicht.
+
+\textcolor{red}{Ich erhebe keinen Anspruch auf Vollständigkeit oder Richtigkeit. Falls ihr Fehler findet oder etwas fehlt, dann meldet euch bitte über den Emailkontakt.}
+
+\tableofcontents
+
+
+\newpage
+
+
+
+\section{Aufgabe 1}
+
+\subsection*{a)}
+
+Es gibt zwar 6 Taschen, aber nur zwei unterschiedliche Massen bei den Elektronen. Diese sind $m_t = transversal$ und $m_l = longitudinal$.
+
+
+\subsection*{b)}
+
+Zunächst setzen wir die gegebenen Größen ein:
+
+
+\begin{align*}
+\omega^2 &= \frac{e^2 B^2}{m_t^2} \cdot \cos^2(\theta) + \frac{e^2 B^2}{m_t m_l} \cdot \sin^2(\theta) := \frac{e^2 B^2}{m*^2} \\
+&= e^2 B^2 \cdot \left( \frac{\cos^2(\theta)}{m_t^2} + \frac{\sin^2(\theta)}{m_t m_l} \right) = e^2 B^2 \cdot \frac{}{^m*^2} \\
+\Leftrightarrow \frac{1}{m*^2} &= \frac{\cos^2(\theta)}{m_t^2} + \frac{\sin^2(\theta)}{m_t m_l}
+\end{align*}
+
+
+\section{Aufgabe 2}
+
+\begin{align*}
+E_F &= E_D - 3kT 
+\intertext{Wir rechnen mit $kT = \unit[0,026]{eV}$ bei $RT = \unit[26]{meV}$. Dann gilt für das Niveau $3kT$ unterhalb des Donatorzustandes:}
+n_d &= N_D \cdot \frac{1}{1 + \half e^{\frac{E - E_F}{kT}}} = N_D \cdot \frac{1}{1 + \half e^{\frac{E_F + 3kT - E_F}{kt}}} = N_D \cdot \frac{1}{1 + \half e^3} = N_D \cdot 9,056 \cdot 10^{-2} = \unit[9,05 \cdot 10^{15}]{cm^3}
+\intertext{Für dn Zustand $3kT$ oberhalb des Donatorzustandes gilt dann:}
+n_d &= N_D \cdot \frac{1}{1 + \half e^{\frac{E_F - 3kT + E_F}{kt}}} = \frac{1}{1 + \half e^{-3}} \cdot N_D = \unit[9,76 \cdot 10^{16}]{cm^3}
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+\end{document}
