@@ -70,7 +70,7 @@ D
 Damit das erfüllt ist gelten $\det(m) = 0$.
 
 
-\section{Aufgabe 2}
+\section{Aufgabe 3}
 
 Im Prinzip ist das nur intelligentes Umformen:
 
@@ -158,7 +158,7 @@ f_h(E) &= \frac{1}{1 + e^{\frac{E - E_F}{kT}}} = \frac{1}{1 + e^{\frac{3kT}{kT}}
 Hier sieht das ganze rech ähnlich aus:
 
 \begin{align*}
-f_h(E) 1 - f(E) = \frac{1}{1 + e^{- \frac{E - E_F}{kT}}} = 0,0474 = \unit[4,74]{\%}
+f_h(E) = 1 - f(E) = \frac{1}{1 + e^{- \frac{E - E_F}{kT}}} = 0,0474 = \unit[4,74]{\%}
 \end{align*}
 
 
@@ -179,7 +179,7 @@ Wir nehmen die Fermiverteilung von oben und setzen sie mit der Bolzmanverteilung
 f(E) &= \frac{1}{1 + e^{\frac{E - E_F}{kT}}} = \frac{1}{1 + e^x} \qquad \text{mit} \qquad x = \frac{E - E_F}{kT} \\
 \intertext{Wir setzen gleich:}
 f_B(E) &= e^{- \frac{E - E_F}{kT}} = e^{-x} \\
-\intertext{Dabei solle nur $\unit[5]{\%}$ Fehler gemacht werden:}
+\intertext{Dabei sollen nur $\unit[5]{\%}$ Fehler gemacht werden:}
 \frac{5}{100} &= \frac{f_B(E) - f(E)}{f(E)} = \frac{e^{-x} + \frac{1}{1 + e^x}}{\frac{1}{1 + e^x}} = \frac{\frac{e^{-x} + e^0 - 1}{1 + e^x}}{\frac{1}{1 + e^x}} \\
 \Leftrightarrow e^{-x} &= \frac{5}{100} \\
 \Leftrightarrow x &= - \ln\left( \frac{5}{100} \right) \approx 3 \\
