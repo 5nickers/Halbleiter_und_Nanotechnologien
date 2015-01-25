@@ -35,13 +35,13 @@ V_P &= \frac{a^2 e N_d}{2 \cdot \epsilon_0 \cdot \epsilon_r} = \frac{\left( 400 
 \subsection*{b)}
 
 \begin{align*}
-I_{Sä} &= I_P \cdot \left[ \frac{3 \cdot \left( V_P - V_g - V_{bi} \right)}{V_P} - \frac{2 \cdot \left( V_P^{3/2} - \left( V_g - V_{bi} \right)^{3/2} \right)}{V_P^{3/2}} \right]
+I_{Sä} &= I_P \cdot \left[ \frac{3 \cdot \left( V_P - V_g - V_{bi} \right)}{V_P} - \frac{2 \cdot \left( V_P^{3/2} - \left( V_g + V_{bi} \right)^{3/2} \right)}{V_P^{3/2}} \right]
 \intertext{Dabei ist der Pinch-Off Strom:}
 I_P &= \frac{z \cdot \mu \cdot q^2 \cdot N_d^2 \cdot a^3}{6 \cdot \epsilon_0 \epsilon_r \cdot L} = \frac{30 \cdot 10^{-6} \cdot 0,2 \cdot \left( 1,6 \cdot 10^{-19} \right)^2 \cdot \left( 10^{23} \right)^2 \cdot \left( 400 \cdot 10^{-9} \right)^3}{6 \cdot 8,85 \cdot 10^{-12} \cdot 12,9 \cdot 3 \cdot 10^{-6}} = \unit[47,8]{mA}
 \intertext{Die Sättigungsspannungen sind dann:}
-I_{V_g = 2} &= 47,8 \cdot \left[ \frac{3 \cdot \left( 11,2 - 2 - 0,6 \right)}{11,2} - \frac{2 \cdot \left( 11,2^{3/2} - \left( 2 - 0,6 \right)^{3/2} \right)}{11,2^{3/2}} \right] = \unit[25,2]{mA} \\
-I_{V_g = 4} &= 47,8 \cdot \left[ \frac{3 \cdot \left( 11,2 - 4 - 0,6 \right)}{11,2} - \frac{2 \cdot \left( 11,2^{3/2} - \left( 4 - 0,6 \right)^{3/2} \right)}{11,2^{3/2}} \right] = \unit[14]{mA} \\
-I_{V_g = 6} &= 47,8 \cdot \left[ \frac{3 \cdot \left( 11,2 - 6 - 0,6 \right)}{11,2} - \frac{2 \cdot \left( 11,2^{3/2} - \left( 6 - 0,6 \right)^{3/2} \right)}{11,2^{3/2}} \right] = \unit[6]{mA} 
+I_{V_g = 2} &= 47,8 \cdot \left[ \frac{3 \cdot \left( 11,2 - 2 - 0,6 \right)}{11,2} - \frac{2 \cdot \left( 11,2^{3/2} - \left( 2 + 0,6 \right)^{3/2} \right)}{11,2^{3/2}} \right] = \unit[25,2]{mA} \\
+I_{V_g = 4} &= 47,8 \cdot \left[ \frac{3 \cdot \left( 11,2 - 4 - 0,6 \right)}{11,2} - \frac{2 \cdot \left( 11,2^{3/2} - \left( 4 + 0,6 \right)^{3/2} \right)}{11,2^{3/2}} \right] = \unit[14]{mA} \\
+I_{V_g = 6} &= 47,8 \cdot \left[ \frac{3 \cdot \left( 11,2 - 6 - 0,6 \right)}{11,2} - \frac{2 \cdot \left( 11,2^{3/2} - \left( 6 + 0,6 \right)^{3/2} \right)}{11,2^{3/2}} \right] = \unit[6]{mA} 
 \end{align*}
 
 \subsection*{c)}
@@ -125,7 +125,7 @@ Die Spannung am Lastwiderstand bestimmen wir über das ohmsche Gesetz:
 \begin{align*}
 U_L &= R_L \cdot I_L = 250 \cdot 25 \cdot 10^{-3} = \unit[6,25]{V}
 \intertext{Damit fällt für die Ausgangsspannung noch ab:}
-U_{out} &= 20 - 4,25 = \unit[13,75]{V}
+U_{out} &= 20 - 6,25 = \unit[13,75]{V}
 \end{align*}
 
 
